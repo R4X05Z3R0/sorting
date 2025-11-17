@@ -17,7 +17,7 @@ public class Main {
         Collator danishCollator = Collator.getInstance(Locale.forLanguageTag("da-DK"));
 
 
-        Collections.sort(names);
+        Collections.sort(names, danishCollator);
 
         for (String name: names){
             System.out.println(name);
