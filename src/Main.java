@@ -19,8 +19,32 @@ public class Main {
 
         Collections.sort(names, danishCollator);
 
-        for (String name: names){
-            System.out.println(name);
-        };
+//        for (String name: names){
+//            System.out.println(name);
+//        };
+
+        ArrayList<Student> students = new ArrayList<>(Arrays.asList(
+                new Student("Zoe", "Andersen"),
+                new Student("Asraf", "Bakshi"),
+                new Student("Mia", "Christensen"),
+                new Student("Kevin","Dahl"),
+                new Student("Lina","Eriksen"),
+                new Student("Alva","Frederiksen"),
+                new Student("Ahmed","Hansen"),
+                new Student("Muhammed","Iversen"),
+                new Student("Åge","Hansen"),
+                new Student("Øyvind", "Johansen"),
+                new Student("Emil", "Kristensen"),
+                new Student("Sofie", "Larsen"),
+                new Student("Åge", "Nielsen")
+        ));
+
+        Collections.sort(students);
+
+        System.out.println("Last Name | First Name");
+        for (Student student: students){
+            System.out.println(student);
+        }
+
     }
 }
